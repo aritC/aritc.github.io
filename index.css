@@ -1,0 +1,85 @@
+:root {
+    --main-bg-color: #192031;
+    --main-text-color: #d6dff5;
+  }
+
+body{
+    height: 100vh;
+    font-family: 'Roboto', sans-serif;
+    overflow-x: hidden;
+    background-color: #192031;
+    color: var(--main-text-color);
+    display: grid;
+    align-items: center;
+}
+
+main{
+    margin: 0 30%;
+    padding: 0;
+}
+
+nav {
+    position: fixed;
+    top: 0; 
+    width: 100%;
+    display: flex;
+    justify-content: space-between; 
+    align-items: center;
+    z-index: 1000;
+  }
+  
+  .logo {
+    color: var(--main-text-color); 
+    font-size: 24px; 
+    margin-left: 20px; 
+  }
+  
+
+  .nav-links {
+    display: flex;
+    padding: 0;
+  }
+  
+
+  .nav-links a {
+    color: var(--main-text-color); 
+    text-decoration: none;
+    padding: 10px 50px;
+  }
+  
+ 
+  .nav-links a:hover {
+    text-decoration: underline;  
+  }
+
+#name {
+    margin: 0;
+    font-size: 5rem;
+}
+
+#salutaion{
+    margin: 0;
+}
+
+@keyframes spin {
+    0% {
+      transform: rotate(0deg);  
+    }
+    100% {
+      transform: rotate(359deg);
+    }
+  }
+
+#blob {
+    z-index: -99;
+    width: 20%;
+    height: 20%;
+    filter: blur(55px);
+    background: linear-gradient(64deg, rgb(107, 230, 189,0.3) 23%, 
+    rgb(55, 140, 197,0.3) 45%, rgb(17, 23, 110,0.3) 80%);
+    border-radius: 50%;
+    translate: -30% -50%;
+    animation: blobMovement 15s ease-in-out infinite, spin 100s infinite;
+
+  }
+  
