@@ -25,7 +25,7 @@ $( document ).ready(function() {
       salutation.text(salutationsList[index]);
       index = (index+1) % salutationsList.length;
       clearInterval();
-    }, 3000);
+    }, 2000);
 
 
     // Mousemovement Tracker
