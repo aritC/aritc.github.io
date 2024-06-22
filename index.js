@@ -19,20 +19,12 @@ $( document ).ready(function() {
       "Hallo!👋 Mein Name ist",
       "Привет!👋 Меня зовут",
     ];
-    const salutation = $("#salutation");
+    const salutation = $(".sub-title");
     let index = 1;
     const intervalId = setInterval(() => {
       salutation.text(salutationsList[index]);
       index = (index+1) % salutationsList.length;
       clearInterval();
     }, 2000);
-
-
-    // Mousemovement Tracker
-    $(document).mousemove(function(e) {
-      var mouseX = e.pageX;
-      var mouseY = e.pageY;
-      $("#blob").css({top: mouseY, left: mouseX, position:'absolute'});
-    })
 
 });
