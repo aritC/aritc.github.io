@@ -2,8 +2,8 @@
     --main-dark-color: #0c0c0c;
     --secondary-dark-color: #111111;
     --tertiary-dark-color: #272727;
-    --main-light-color: #aeaeb1;
-    --secondary-light-color:#dadada;
+    --main-light-color: #e4e4e4;
+    --secondary-light-color:#ffffff;
     font-family: "Montserrat", sans-serif;
   }
 
@@ -31,7 +31,7 @@ body{
 
 main{
   height: 100vh;
-  width: 80rem;
+  width: 50vw;
   max-width: 100rem;
   margin: auto;
 }
@@ -106,6 +106,7 @@ main{
   width: 100%;
   height: 40rem;
   border-radius: 3rem;
+  
 }
 
 .card-border{
@@ -115,13 +116,14 @@ main{
 }
 
 .hero{
+  margin-bottom: 4rem;
   background-color: var(--secondary-dark-color);
   background: 
-  radial-gradient(ellipse at 30% bottom,rgba(120, 194, 255, 0.438) 1%, rgba(0,0,0,0) 30%, rgba(0,0,0,0) 100%),
-    radial-gradient(ellipse at 85% bottom, rgba(255, 50, 50, 0.5) 1%, rgba(0, 0, 0, 0) 60%, rgba(0,0,0,0) 100%);
+  radial-gradient(ellipse at 30% bottom,rgba(120, 194, 255, 0.637) 1%, rgba(0,0,0,0) 30%, rgba(0,0,0,0) 100%),
+    radial-gradient(ellipse at 85% bottom,rgba(255, 255, 255, 0.685) 1%, rgba(255, 50, 50, 0.753) 20%,rgba(0,0,0,0) 60%);
 }
 
-.hero-content{
+.card-content{
   padding: 2rem;
   margin: 2rem;
   display: grid;
@@ -151,11 +153,16 @@ main{
   font-weight: 300;
 }
 
-.title p{
-  font-size: 9rem;
+.title>p{
+  font-size: 7rem;
   font-weight: 600;
   padding: 0;
-  margin: 0;
+  margin: 2rem 0;
+}
+
+.title{
+  font-size: 2rem;
+  text-align: center;
 }
 
 .title-text{
@@ -163,4 +170,17 @@ main{
   text-align: justify;
   text-justify: inter-word;
   margin-bottom: 2rem;
+}
+
+.skills{
+  text-align: center;
+  justify-items: center;
+}
+
+.work{
+  margin-bottom: 14rem;
+  background-color: var(--secondary-dark-color);
+  background: 
+  radial-gradient(ellipse at 30% top,rgba(120, 194, 255, 0.438) 1%, rgba(0,0,0,0) 30%, rgba(0,0,0,0) 100%),
+    radial-gradient(ellipse at 85% top, rgba(255, 50, 50, 0.5) 1%, rgba(0, 0, 0, 0) 60%, rgba(0,0,0,0) 100%);
 }
